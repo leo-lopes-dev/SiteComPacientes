@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Principal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styleprincipal.css">
+    <!-- Conteúdo -->
+</head>
+<body>
+    <main>
+        <div class="side" id="side">
+            <div class="usua">
+                <i class="bi bi-person-circle"></i>
+                <p><b>Caio Coelho</b></p>
+            </div>
+            <div class="botoes">
+                <button id="fecha" onclick="fechaside()">X</button>
+                    <button class="pronto" onclick="abrapronto()">
+                        <p>
+                            <i class="bi bi-person-video2"></i>
+                            <a>Prontuário</a>
+                            <i class="bi bi-caret-down-fill"></i>
+                         </p>  
+                    </button>
+                        <div id="opcoes">
+                            <p><a href="pacientes.html">Pacientes</a></p>
+                            <p><a href="#">Atendimento</a></p>
+                        </div>
+                <p><i class="bi bi-calendar4"></i> <a href="#">Agendamento</a></p>
+                <p><i class="bi bi-info-circle"></i> <a href="#">Sobre</a></p>
+            </div>
+            <p id="sair"><a href="index.html">Sair <i class="bi bi-box-arrow-right"></i></a></p>
+        </div>
+        <div class="content">
+            <button id="toggle" onclick="abraside()">&#9776;</button>  
+            <h1 id="h1">Navegue até as opções desejadas.</h1>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

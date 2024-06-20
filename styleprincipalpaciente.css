@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css");  /*Icones do place holder*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+html, body, main{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    height: 100%;
+}
+main{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    position: relative;
+}
+/* Side na esquerda */
+.side{
+    background-color: #54B5EC;
+    color: #fff;
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+.usua{
+    color: #000;
+    padding: 5px;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.usua p{
+    font-size: 23px;
+}
+.usua i{
+    padding: 5px;
+    font-size: 30px;
+}
+.botoes{
+    margin: 60px 10px 1px 10px;
+}
+.botoes p{
+    font-weight: 500;
+    font-size: 20px;
+}
+.botoes a{
+    text-decoration: none;
+    color: #fff;
+}
+.pronto{
+    color: inherit;
+    border: none;
+    background-color: unset;
+    height: 5px;
+    padding: 0;
+    cursor: pointer;
+}
+#opcoes{
+    display: none;
+    margin-left: 25%;
+}
+#sair{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 20px;
+}
+#sair a{
+    text-decoration: none;
+    color: #fff;
+}
+#toggle{
+    display: none;
+    cursor: pointer;
+    margin: 1px 0px 40px auto;
+    color: rgb(0, 0, 0);
+    border: none;
+    background-color: unset;
+    font-size: 30px;
+    padding: 10px;
+}
+#fecha{
+    display: none;
+    margin: 1px auto 40px auto;
+    color: rgb(0, 0, 0);
+    border: none;
+    background-color: unset;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Fim da side na esquerda */
+/* Content */
+
+.content{
+    padding: 20px 20px 10px 20px;
+    background-color: #DADADA;
+}
+.content h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px auto 20px auto;
+}
+.content #p{
+    width: 200px;
+    padding: 20px;
+    background-color: #EEEEEE;
+    border-radius: 16px 0px 16px 0px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+}
+.content a{
+    text-decoration: none;
+    color: inherit;
+}
+#num{
+    font-size: 50px;
+    padding: 7px;
+}
+#pacientes{
+    font-size: 28px;
+    padding: 7px;
+}
+.tabela{
+    padding: 20px;
+    height: 420px;
+    background-color: #EEEEEE;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+
+}
+.tabela p{
+    margin: 3px;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+#incluir{
+    padding: 13px;
+    background-color: #54B5EC;
+    border-radius: 20px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    width: 80px;
+}
+#pesquisa{
+    padding: 13px;
+    background-color: #E8EFF2;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    height: 20px;
+    margin: auto 0px;
+}
+.table{
+    overflow-x: auto;
+    height: auto;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    width: max-content;
+    height: auto;
+    margin: 60px auto 20px auto;
+}
+th{
+    border: 1px solid rgb(0, 0, 0);
+    width: 230px;
+    height: 30px;
+}
+td{
+    border: 1px solid rgb(0, 0, 0);
+    height: 30px;
+}
+#carregar{
+    padding: 13px;
+    background-color: #54B5EC;
+    border-radius: 20px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    width: 90px;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+#exibir{
+    padding: 13px;
+    background-color: #E8EFF2;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    width: 150px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    margin: auto 0 auto auto;
+}
+
+/* Fim de content */
+
+
+@media only screen and (max-width: 1300px) {
+    main{
+        grid-template-columns: 25% 75%;
+}
+}
+@media only screen and (max-width: 954px) {
+    #toggle{
+        position: fixed;
+        display: block;
+        top: 0;
+        right: 0;
+    }
+    #fecha{
+        display: block;
+    }
+    .side{
+        display: none;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: #54b4eceb;
+        overflow-x: hidden;
+        color: #000;
+        transition: 0.8s;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    #sair a{
+        color: #000;
+    }
+    .botoes a{
+        color: #000;
+    }
+    #pesquisa{
+        width: 110px;
+        height: 30px;
+    }
+    th{
+        width: 150px;
+    }
+    #carregar{
+        height: 15px;
+    }
+    #exibir{
+        height: 15px;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Principal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styleprincipalpaciente.css">
+    <!-- Conteúdo -->
+</head>
+<body>
+    <main>
+        <div class="side" id="side">
+            <div class="usua">
+                <i class="bi bi-person-circle"></i>
+                <p><b>Caio Coelho</b></p>
+            </div>
+            <div class="botoes">
+                <button id="fecha" onclick="fechaside()">X</button>
+                    <button class="pronto" onclick="abrapronto()">
+                        <p>
+                            <i class="bi bi-person-video2"></i>
+                            <a>Prontuário</a>
+                            <i class="bi bi-caret-down-fill"></i>
+                         </p>  
+                    </button>
+                        <div id="opcoes">
+                            <p><a href="#">Pacientes</a></p>
+                            <p><a href="#">Atendimento</a></p>
+                        </div>
+                <p><i class="bi bi-calendar4"></i> <a href="#">Agendamento</a></p>
+                <p><i class="bi bi-info-circle"></i> <a href="#">Sobre</a></p>
+            </div>
+            <p id="sair"><a href="index.html">Sair <i class="bi bi-box-arrow-right"></i></a></p>
+        </div>
+        <div class="content">
+            <button id="toggle" onclick="abraside()">&#9776;</button>  
+            <h3>Pacientes</h3>
+            <p id="p">
+                <a id="pacientes">Total de pacientes</a>
+                <a id="num">10</a>
+            </p>
+            <div class="tabela">
+                <p>
+                    <a id="incluir" href="incluirpacientes.html">+ Incluir paciente</a>
+                    <a id="pesquisa">Pesquisar por nome <i class="bi bi-search"></i></a>
+                </p>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                                <th>Código</th>
+                                <th>Última consulta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Cliente A</td>
+                                <td>(47) 996213534</td>
+                                <td>12312asdad</td>
+                                <td>10/04/2023</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Cliente B</td>
+                                <td>(47) 996213534</td>
+                                <td>12312asdad</td>
+                                <td>10/04/2023</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Cliente C</td>
+                                <td>(47) 996213534</td>
+                                <td>12312asdad</td>
+                                <td>12/04/2023</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Cliente D</td>
+                                <td>(47) 996213534</td>
+                                <td>12312asdad</td>
+                                <td>14/04/2023</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    <a id="carregar">Carregar +</a>
+                    <a id="exibir">Exibir <mark>10</mark> por vez</a>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

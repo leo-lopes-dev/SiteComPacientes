@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Principal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="stylesincluirpaciente.css">
+    <!-- Conteúdo -->
+</head>
+<body>
+    <main>
+        <div class="side" id="side">
+            <div class="usua">
+                <i class="bi bi-person-circle"></i>
+                <p><b>Caio Coelho</b></p>
+            </div>
+            <div class="botoes">
+                <button id="fecha" onclick="fechaside()">X</button>
+                    <button class="pronto" onclick="abrapronto()">
+                        <p>
+                            <i class="bi bi-person-video2"></i>
+                            <a>Prontuário</a>
+                            <i class="bi bi-caret-down-fill"></i>
+                         </p>  
+                    </button>
+                        <div id="opcoes">
+                            <p><a href="pacientes.html">Pacientes</a></p>
+                            <p><a href="#">Atendimento</a></p>
+                        </div>
+                <p><i class="bi bi-calendar4"></i> <a href="#">Agendamento</a></p>
+                <p><i class="bi bi-info-circle"></i> <a href="#">Sobre</a></p>
+            </div>
+            <p id="sair"><a href="index.html">Sair <i class="bi bi-box-arrow-right"></i></a></p>
+        </div>
+        <div class="content">
+            <button id="toggle" onclick="abraside()">&#9776;</button>  
+            <p id="incluir">Incluir paciente</p>
+            <div class="conteudo">
+                <p><b>Endereço</b></p>
+                <div class="texto2">
+                    <div class="texto2texto">
+                        <div class="gridpaciente">
+                            <form>
+                                <div class="input-container" data-icon="">
+                                    <input type="text" placeholder="CPF" name="Convenio" required>
+                                 </div>
+                                <div class="input-container" data-icon="">
+                                    <input type="text" placeholder="Endereço" name="Concelho" required>
+                                </div>
+                                <div class="input-container" data-icon="">
+                                    <input type="text" placeholder="Complemento" name="Registro" required>
+                                </div>
+                                <div class="input-container" data-icon="">
+                                    <input type="text" placeholder="Cidade" name="UF" required>
+                                </div>
+                                <div class="input-container" data-icon="">
+                                    <input type="text" placeholder="Pais" name="Profissao" required>
+                                </div>
+                            </form>
+                            <form>
+                                <div class="input-container" id="codigo" data-icon="">
+                                    <input type="text" id="codigo" placeholder="Numero" name="Profissao" required>
+                                </div>
+                                <div class="input-container" id="codigo" data-icon="">
+                                    <input type="text" id="codigo" placeholder="Bairro " name="Profissao" required>
+                                </div>
+                                <div class="input-container" id="codigo" data-icon="&#61661;">
+                                    <input type="text" id="codigo" placeholder="Estado" name="Profissao" required>
+                                </div>
+                            </form>
+                        </div>
+                        <br>
+                        <div class="gridpaciente">
+                            <form>
+                            </form>
+                            <a id="proximo" href="incluirpacientes3.html">Proximo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
